@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Button from "../Button/Button";
 
 function CreateItemCard(props) {
 	const [title, setTitle] = useState([])
@@ -26,3 +27,10 @@ function CreateItemCard(props) {
 }
 
 export default CreateItemCard
+
+
+{/*<button className="text-success btn_custom" onClick={() => completeTask(title)}>Add Task</button>{' '}*/}
+{/*<button className="text-danger btn_custom" onClick={() => completeTask(title)}>Add Task</button>{' '}*/}
+{/*<button className="text-default btn_custom" onClick={() => completeTask(title)}>Add Task</button>{' '}*/}
+{/*<Button variant={"success"} />*/}
+{/*<Button variant={"danger"} />*/}

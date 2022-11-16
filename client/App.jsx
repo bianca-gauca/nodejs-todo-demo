@@ -34,6 +34,12 @@ function App(props) {
 		loadTasks()
 	}
 
+	// const isActiveTabClass = (isActive) => {
+	// 	return isActive ? "border-x-2 border-x-primary border-t-2 border-t-primary border-solid" : "hover:text-primary"
+	// }
+
+	//className={`inline-block py-1 px-10 rounded-t focus:outline-0 cursor-pointer ${isActiveTabClass(activeTab === type)}`}
+
 	const tabPanel = () => {
 		return (
 			<Tabs>
@@ -50,6 +56,7 @@ function App(props) {
 						</Tab>
 					))}
 				</TabList>
+
 				<TabPanel>
 					<ActiveListCard
 						title="Active Tasks"
@@ -75,3 +82,9 @@ function App(props) {
 }
 
 export default inject('rootStore')(observer(App))
+
+
+//** className="w-full md:w-3/5 mx-auto my-0" */
+
+//** Divider */
+// <div className="w-full border border-primary border-solid"></div>

@@ -36,3 +36,9 @@ A Node.js application that let's you add and complete tasks on a single page, st
 - Build the React app using `npm run build`
 - Start the server using `npm run start:server`
 - Navigate to `http://localhost:4000/` to view the production version of the React app, served by Express
+
+## Setup tailwind with vite (https://tailwindcss.com/docs/guides/vite)
+  ```bash
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init -p
+  ```

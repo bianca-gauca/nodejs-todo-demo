@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn_custom {
+        @apply text-xl ml-3 hover:text-hover;
+    }
+}

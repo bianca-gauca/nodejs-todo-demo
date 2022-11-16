@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import RootStore from './stores/rootStore'
+import './index.css'
 
 const rootStore = new RootStore()
 
