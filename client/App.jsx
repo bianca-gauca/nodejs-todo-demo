@@ -5,6 +5,7 @@ import ListItemCard from './components/ListItemCard'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import ActiveListCard from './components/PendingListCard'
 import './styles.css'
+import {StyledDivider, StyledTab} from "./style";
 
 function App(props) {
 	const types = ['active', 'complete']
@@ -41,7 +42,7 @@ function App(props) {
 					{types.map(type => (
 						<Tab
 							key={type}
-							active={activeTab === type}
+							isActive={activeTab === type}
 							onClick={() => {
 								setActiveTab(type)
 							}}
@@ -50,6 +51,7 @@ function App(props) {
 						</Tab>
 					))}
 				</TabList>
+				{/*<StyledDivider></StyledDivider>*/}
 				<TabPanel>
 					<ActiveListCard
 						title="Active Tasks"
